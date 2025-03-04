@@ -3,6 +3,7 @@
         <parameter name="gender" value="#{system['gender']}"/>
         <classes>
             <class name="com.nordea.tests.api.ApiTest"/>
+            <class name="com.nordea.tests.gui.GuiTest"/>
         </classes>
     </test>
 </suite>
