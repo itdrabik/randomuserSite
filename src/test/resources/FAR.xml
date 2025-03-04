@@ -1,0 +1,8 @@
+<suite name="FAR">
+    <test name="API and GUI Tests">
+        <parameter name="gender" value="#{system['gender']}"/>
+        <classes>
+            <class name="com.nordea.tests.api.ApiTest"/>
+        </classes>
+    </test>
+</suite>
