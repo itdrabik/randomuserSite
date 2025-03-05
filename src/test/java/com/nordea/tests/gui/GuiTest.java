@@ -24,7 +24,7 @@ public class GuiTest {
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
     @Test
@@ -43,12 +43,10 @@ public class GuiTest {
             String title = icon.getAttribute("data-title");
             icon.click();
 
-            if (i == 0) {
-                wait.until(ExpectedConditions.attributeToBeNotEmpty(icon, "data-value"));
-                try { Thread.sleep(500); } catch (InterruptedException ignored) {}
-            }
-
-            wait.until(ExpectedConditions.attributeToBeNotEmpty(icon, "data-value"));
+            wait.until(driver -> {
+                String value = icon.getAttribute("data-value");
+                return value != null && !value.trim().equals("...");
+            });
 
             String value = icon.getAttribute("data-value");
             System.out.println("Extracted: " + title + " -> " + value);
