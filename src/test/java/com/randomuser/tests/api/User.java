@@ -1,4 +1,4 @@
-package com.nordea.tests.api;
+package com.randomuser.tests.api;
 
 public class User {
     public String name;

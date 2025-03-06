@@ -2,8 +2,8 @@
     <test name="API and GUI Tests">
         <parameter name="gender" value="#{system['gender']}"/>
         <classes>
-            <class name="com.nordea.tests.api.ApiTest"/>
-            <class name="com.nordea.tests.gui.GuiTest"/>
+            <class name="com.randomuser.tests.api.ApiTest"/>
+            <class name="com.randomuser.tests.gui.GuiTest"/>
         </classes>
     </test>
 </suite>

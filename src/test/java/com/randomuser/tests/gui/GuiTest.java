@@ -1,4 +1,4 @@
-package com.nordea.tests.gui;
+package com.randomuser.tests.gui;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
