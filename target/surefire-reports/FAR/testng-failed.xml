@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FAR]" verbose="0">
+  <test thread-count="5" name="API and GUI Tests(failed)" verbose="0">
+    <parameter name="gender" value="#{system[&#039;gender&#039;]}"/>
+    <classes>
+      <class name="com.nordea.tests.api.ApiTest">
+        <methods>
+          <include name="apiTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.nordea.tests.api.ApiTest -->
+    </classes>
+  </test> <!-- API and GUI Tests(failed) -->
+</suite> <!-- Failed suite [FAR] -->

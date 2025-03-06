@@ -1,0 +1,9 @@
+<suite name="FAR">
+    <test name="API and GUI Tests">
+        <parameter name="gender" value="#{system['gender']}"/>
+        <classes>
+            <class name="com.randomuser.tests.api.ApiTest"/>
+            <class name="com.randomuser.tests.gui.GuiTest"/>
+        </classes>
+    </test>
+</suite>
